@@ -12,8 +12,10 @@
   margin-top: 20px;
   font-weight: 700;
 }
-h1 {
-  font-weight: 500;
+.question h3 {
+  text-align: center;
+}
+.asked__questions > h1 {
   font-size: 30px;
   text-align: center;
   padding: 0 30px;
@@ -27,17 +29,25 @@ h1 {
   box-shadow: 0 0 10px #80808078;
   padding: 10px;
 }
+.answer form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #answerInput {
   outline: none;
   border: none;
   height: 100%;
   padding: 14px 10px;
   font-size: 20px;
+  border: 1px solid #8080804d;
 }
 .submitButton {
-  border-radius: 9999px;
+  /* border-radius: 9999px; */
   height: 40px;
   width: 70px;
+  height: 100%;
+  padding: 19px 10px;
   text-align: center;
   outline: none;
   border: none;
@@ -45,6 +55,7 @@ h1 {
   font-size: 11px;
   font-weight: 600;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .submitButton:hover {
@@ -57,5 +68,10 @@ h1 {
 @media (max-width: 600px) {
   .answer form {
     flex-direction: column;
+    width: 100%;
+  }
+  .answer form input {
+    margin-bottom: 10px;
+    width: 100%;
   }
 }

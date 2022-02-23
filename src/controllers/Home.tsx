@@ -56,7 +56,7 @@ const Home: React.FC = () => {
                 text: "You won't be able to revert this!",
                 icon: 'warning',
                 showCancelButton: true,
-                confirmButtonText: 'Yes, delete it!',
+                confirmButtonText: 'Yes, do it!',
                 cancelButtonText: 'No, cancel!',
                 reverseButtons: true
               })
@@ -74,9 +74,9 @@ const Home: React.FC = () => {
 
     // console.log("This is erer ", askedQuestion, ansRes);
     return (
-    <div className="asked__questions" >
+    <div className="asked__questions">
         <h1>Quiz-time</h1>
-        <div className="question"><h3> {askedQuestion?.question}</h3> </div>
+        <div className="question"><h3>Q.) {askedQuestion?.question}</h3> </div>
         <div className="answer">
             <form action="" onSubmit={validateAnswer}>
                 <input type="text" id="answerInput"  />
