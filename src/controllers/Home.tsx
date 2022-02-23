@@ -84,7 +84,7 @@ const Home: React.FC = () => {
             </form>
         </div>
         
-     {(ansRes!=undefined) ?  (ansRes) ? <div className="ansRight">Correct Answer</div>: <div className="ansWrong" >Wrong Answer </div>: ""}
+     {(ansRes!==undefined) ?  (ansRes) ? <div className="ansRight">Correct Answer</div>: <div className="ansWrong" >Wrong Answer </div>: ""}
     </div>
   )
 }
