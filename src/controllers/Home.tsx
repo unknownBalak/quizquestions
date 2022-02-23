@@ -72,7 +72,7 @@ const Home: React.FC = () => {
         target.answerInput.focus();
     }
 
-    console.log("This is erer ", askedQuestion, ansRes);
+    // console.log("This is erer ", askedQuestion, ansRes);
     return (
     <div className="asked__questions" >
         <h1>Quiz-time</h1>
